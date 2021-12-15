@@ -1,6 +1,11 @@
 <script>
 import Title from "$lib/title.svelte";
 </script>
+<svelte:head>
+    <title>Electricity</title>
+    <meta name="description" content="Electricity book ">
+</svelte:head>
+
 
 <Title text="Electric charge">
     <p class="description">
@@ -19,11 +24,31 @@ import Title from "$lib/title.svelte";
                 <li>
                     <p class="text-xl"><span class="font-medium">PROTON</span> = e = + 1.6 x 10<sup>-19</sup>C</p>
                 </li>
+                <li>
+                    <p class="text-xl"><span class="font-medium">ELECTRON</span> = e = - 1.6 x 10<sup>-19</sup>C</p>
+                </li>
             </ul>
         </li>
-
+        <li>
+            <p>As charge of one electron  = 1.6 x 10<sup>-19</sup>C</p>
+            <p>∴ charge on n electron = n x 1.6 x 10<sup>-19</sup>C</p>
+        </li>
+        <li>
+            i.e. <b>q = n x e</b><sub >(where n is number of electron)</sub>
+        </li>
     </ul>
 </Title>
+ <!-- footer -->
+ <footer class="fixed left-0 bottom-0 w-screen  flex flex-reverse-row items-center pb-8 text-center justify-center">
+
+    <div class=" text-black  text-sm font-bak">
+        <p>
+            <a href="https://www.yogpanjarale.com" class=" text-black">
+                Made with ❤️&🕐 by Yog Panjarale
+            </a>
+        </p>
+    </div>
+</footer>
 
 <style>
 * {
@@ -31,7 +56,7 @@ import Title from "$lib/title.svelte";
     @apply text-lg;
 }
 
-sup {
+sup,sub {
     @apply text-sm
 }
 
@@ -47,6 +72,6 @@ ul {
 }
 
 b {
-    @apply bg-yellow-200 px-2 rounded-sm;
+    @apply bg-yellow-100 px-2 rounded-sm;
 }
 </style>
